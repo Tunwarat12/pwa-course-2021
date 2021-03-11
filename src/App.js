@@ -1,5 +1,6 @@
 import './App.css';
 import {useState} from 'react';
+import { Link } from 'react-router-dom';
 
 
 function App() {
@@ -32,7 +33,11 @@ function App() {
       <div className="App-chatroom2">
 
           GI472 <br></br> Varinkarn Kumtanasan <br></br> Pheeraphat Chocokviriyapanya <br></br>Tunwarat Kaewphang <br></br> Nattida Mee-nguen
-
+          <Link to="/friend-list"> 
+          <button>
+            Go !
+          </button>
+          </Link>
         </div>
       </div>
       <div className="App-chatroom">
