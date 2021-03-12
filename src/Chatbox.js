@@ -1,6 +1,6 @@
 import './App.css';
 import {useState} from 'react';
-import { Link } from 'react-router-dom';
+import App from './App';
 
 
 function Chatbox() {
@@ -27,6 +27,7 @@ function Chatbox() {
   };
 
   return (
+      <App>
    <div className="App col-6">
        <div className="App-chatroom">
            {
@@ -44,8 +45,8 @@ function Chatbox() {
     <div className="App-textbox-send" onClick={onSend}>Send!</div>
    </div>
    </div>
-  );
+  </App>
 
+   );
   }
-
 export default Chatbox;

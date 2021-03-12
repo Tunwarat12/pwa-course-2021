@@ -20,27 +20,6 @@
   }
 }
 
-@media (max-width: 1024px){
-  .App{
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(wall.jpg);
-    background-size: 125%;
-    background-color: rgb(29, 29, 29);
-  }
-}
-
-@media (min-width: 768px){
-  .App{
-   /* max-width: 100%;
-    background-color: rgb(190, 3, 134);
-    background-image: url(girl_kitten_flower_141058_1920x1080.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    */
-
-  }
-}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -57,11 +36,8 @@
   color: rgb(68, 117, 250);
 }
 
-.App-content{
+.App-chatroom{
   flex: 12;
-  display:  flex
-  flex-direction colum;
-  background-color: rgba(198, 198, 199, 1.0);
 
   background-image: url(girl_kitten_flower_141058_1920x1080.jpg);
 
@@ -95,7 +71,7 @@
 }
 
 .App-textbox-input {
-  flex: 5;
+  flex: 50;
   height: 100%;
   box-sizing: border-box;
   font-size: x-small;
@@ -108,7 +84,7 @@
   vertical-align: super;
   justify-content: center;
   align-items: center;
-  display: flex;
+  display:  flex ;
   font-family: 'Courier New', Courier, monospace;
   font-weight: 1000;
   color: rgb(52, 1, 255);

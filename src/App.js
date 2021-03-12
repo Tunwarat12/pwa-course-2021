@@ -1,20 +1,32 @@
 import './App.css';
 import { Link } from 'react-router-dom';
-import Chatbox from'./Chatbox';
 
 
-function App() {
+function App({children}) {
+
   return (
     <div className="App">
       <div className="App-header">
           <Link to="/friend-list"> 
           <button>
-            FriendList
+            Friend List
+          </button>
+          </Link>
+
+          <Link to="/Profile"> 
+          <button>
+            Profile
+          </button>
+          </Link>
+
+          <Link to="/Chatbox"> 
+          <button>
+            Chatbox
           </button>
           </Link>
         </div>
     <div className="App-content">
-       <Chatbox />
+       {children}
      </div>
     </div>
   );

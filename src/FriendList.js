@@ -3,7 +3,7 @@ import pic from './pic.jpg';
 function FriendList() {
     return(
         <div>
-         Friend List
+         <div>friend List</div>
         <Link to="/">
          <img src={pic}/>
         </Link>
