@@ -1,31 +1,9 @@
-import './Chatbox';
-import {useState} from 'react';
+import './App.css';
 import { Link } from 'react-router-dom';
+import Chatbox from'./Chatbox';
 
 
 function App() {
-  const [text, setText] = useState("");
-  const [lines, setLines] = useState([]);
-  
-
-  const onTextChange = (event) => {
-    setText(event.target.value);
-  };
-
-  const onSend = () =>{
-    setLines([...lines , text]);
-
-    setText("");
-  };
-
-  const keyPress = (event) => {
-
-    console.log("hello");
-    if (event.which === 13){
-      onSend();
-    }
-  };
-
   return (
     <div className="App">
       <div className="App-header">
@@ -35,8 +13,8 @@ function App() {
           </button>
           </Link>
         </div>
-    <div className="App-chatroom">
-
+    <div className="App-content">
+       <Chatbox />
      </div>
     </div>
   );

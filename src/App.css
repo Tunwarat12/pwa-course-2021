@@ -57,9 +57,11 @@
   color: rgb(68, 117, 250);
 }
 
-.App-chatroom {
+.App-content{
   flex: 12;
-  /*background-color: rgba(198, 198, 199, 1.0);*/
+  display:  flex
+  flex-direction colum;
+  background-color: rgba(198, 198, 199, 1.0);
 
   background-image: url(girl_kitten_flower_141058_1920x1080.jpg);
 
