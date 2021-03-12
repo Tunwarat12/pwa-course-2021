@@ -32,11 +32,12 @@
 
 @media (min-width: 768px){
   .App{
-    max-width: 100%;
+   /* max-width: 100%;
     background-color: rgb(190, 3, 134);
     background-image: url(girl_kitten_flower_141058_1920x1080.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    */
 
   }
 }
