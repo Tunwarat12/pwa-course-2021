@@ -1,14 +1,19 @@
-import {Link} from 'react-router-dom';
-import pic from './pic.jpg';
-function FriendList() {
+import { Link } from 'react-router-dom'
+import App from './App';
+import dog from './dog.PNG';
+function FriendList(){
     return(
+        <App>
         <div>
-         <div>friend List</div>
-        <Link to="/">
-         <img src={pic}/>
-        </Link>
-     </div>
+            Friend List
+            <Link to = "/">
+                <button>
+                    Go to Chatroom
+                </button>
+            </Link>
+        </div>
+        </App>
     )
-};
-    
-export default FriendList;
+}
+
+export default FriendList
